@@ -21,10 +21,8 @@ class Main extends PluginBase implements Listener{
   public function onPlayerChat(PlayerChatEvent $event){
     $message = $event->getMessage();
     foreach($this->words as $word){
-      if(strpos($message, $word) !== false){
-        $message = str_ireplace($word, $replace, $message);
-        $event->setMessage($message);     
-      }
+      $message = str_ireplace($word, $replace, $message);
+      $event->setMessage($message);     
     }
   }
 }
