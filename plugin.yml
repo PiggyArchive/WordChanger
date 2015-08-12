@@ -1,0 +1,14 @@
+name: WordChanger
+main: MCPEPIG\WorldChanger\Main
+version: 1.0.0
+api: [1.0.0]
+load: POSTWORLD
+author: MCPEPIG
+permissions:
+  wordchanger:
+    default: op
+    description: "Everything :P"
+    children:
+      wordchanger.override:
+        default: op
+        description: "Lets you override word changes"
