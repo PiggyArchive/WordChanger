@@ -1,5 +1,7 @@
 <?php
 
+namespace MCPEPIG\WordChanger;
+
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\plugin\PluginBase;
