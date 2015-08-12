@@ -1,5 +1,5 @@
 name: WordChanger
-main: MCPEPIG\WorldChanger\Main
+main: MCPEPIG\WordChanger\Main
 version: 1.0.0
 api: [1.0.0]
 load: POSTWORLD
