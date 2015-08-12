@@ -9,7 +9,7 @@ use pocketmine\utils\Config;
 
 class Main extends PluginBase implements Listener{
   public function onEnable(){
-    @mkdir($this->getServer()->getDataPath() . "/plugins/PigCore/");
+    @mkdir($this->getServer()->getDataPath() . "/plugins/WordChanger/");
     $this->words = (new Config($this->getDataFolder()."Words.yml", Config::YAML, array(
       "words" => array(
          "op" => "poo"
