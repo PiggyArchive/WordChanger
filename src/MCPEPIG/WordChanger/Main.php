@@ -13,14 +13,14 @@ class Main extends PluginBase implements Listener{
     $this->words = (new Config($this->getDataFolder()."Words.yml", Config::YAML, array(
       "words" => array(
          "op" => "poo"
-      ),
-    )))->getAll();
+      )
+    )));
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
     $this->getLogger()->info("§aWordChanger by MCPEPIG loaded!");
   }
   public function onPlayerChat(PlayerChatEvent $event){
     $message = $event->getMessage();
-    foreach($this->words as $word){
+    foreach($this->words->get("words") as $word => $replace){
       $message = str_ireplace($word, $replace, $message);
       $event->setMessage($message);     
     }
