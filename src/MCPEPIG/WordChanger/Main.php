@@ -22,7 +22,7 @@ class Main extends PluginBase implements Listener{
     $player = $event->getPlayer();
     $message = $event->getMessage();
     foreach($this->words->get("words") as $word => $replace){
-      if($player->hasPermissionn("wordchanger.exempt") !== true){
+      if($player->hasPermissionn("wordchanger.override") !== true){
         $message = str_ireplace($word, $replace, $message);
         $event->setMessage($message);     
       }
