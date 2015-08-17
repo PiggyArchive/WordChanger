@@ -19,10 +19,13 @@ class Main extends PluginBase implements Listener{
     $this->getLogger()->info("§aWordChanger by MCPEPIG loaded!");
   }
   public function onPlayerChat(PlayerChatEvent $event){
+    $player = $event->getPlayer();
     $message = $event->getMessage();
     foreach($this->words->get("words") as $word => $replace){
-      $message = str_ireplace($word, $replace, $message);
-      $event->setMessage($message);     
+      if($player->hasPermissionn("wordchanger.exempt") !== true){
+        $message = str_ireplace($word, $replace, $message);
+        $event->setMessage($message);     
+      }
     }
   }
 }
