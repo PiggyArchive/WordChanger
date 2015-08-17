@@ -11,4 +11,4 @@ You can also give a player the permission: wordchanger.override if you do not wa
 
 #Coming Soon
 
-A command to add remove words to replace
+A command to add and remove words to replace
