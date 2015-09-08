@@ -1,5 +1,5 @@
 # WordChanger
-Replaces words in a string with a different word when players talk!
+Mess around with players by replacing words when they chat.
 
 #Configuration
 
