@@ -1,3 +1,3 @@
 # WordChanger
-Mess with players having words replaced.
+Mess with players by having words replaced.
 
